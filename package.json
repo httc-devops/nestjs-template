@@ -1,12 +1,12 @@
 {
   "name": "nest-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NestJS API project template crafted for Docker environments",
   "author": "Saluki",
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "clean": "rimraf ./dist",
