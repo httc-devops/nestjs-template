@@ -1,29 +1,10 @@
 {
-"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
+  "rangeStrategy": "pin",
+  "baseBranches": ["develop"],
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch",
-      "automerge": true,
-      "labels": [
-        "dependencies"
-      ]
-    },
-    {
-      "matchUpdateTypes": [
-        "major"
-      ],
-      "labels": [
-        "dependencies",
-        "breaking"
-      ]
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
     }
   ]
 }
